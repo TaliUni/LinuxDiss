@@ -19,7 +19,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class CommandLine extends JPanel implements KeyListener{
@@ -103,10 +105,10 @@ public class CommandLine extends JPanel implements KeyListener{
 	    	 //using processbuilder so can retrieve the workingdir which can't from just a process
 	    	 ProcessBuilder proc = null;
 	    	 Process myProcess = null;
-	    	 
+	    	 ta.setText("now");
 	    	 try
 	    	 {
-	    		
+	    		ta.setText("instide first try");
 	    		 proc = new ProcessBuilder("/bin/bash");
 	    		 proc.directory(wd);
 	    		 myProcess = proc.start();
@@ -120,24 +122,54 @@ public class CommandLine extends JPanel implements KeyListener{
 			    	   PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(myProcess.getOutputStream())), true);
 			    	   BufferedReader err = new BufferedReader(new InputStreamReader(myProcess.getErrorStream()));
 			    	   
+			    	   Date myDate;
+			    	   Date consolDate;
+			    	   Date commandDate;
 		    		
 			    	    try
 			    	    {
-			    	    	
-			    	    //   out.println("get");
-			    	       out.println("ls");
+			    	    	ta.append("insdie second try");
+			    	    	System.out.println("testing");
+			    	    	String command = tf.getText();
+			    	    	tf.setText("");
+//###### ta.setText will not
+//action until the WHOLE of this try (perhaps more) is finished.
+//therefore because something such as "dc" hangs the in.readLine() this then hangs the GUI, the textarea never populated, and
+//can't get user to add in details....			    	    	
+			    	    	//ta.setText(command + (myDate = new Date()).getTime());
+			    	    	System.out.println("line132 " + " Console date " + (consolDate = new Date()).getTime() + "  tarea date " + (myDate = new Date()).getTime());
+			    	    	int i = 0;
+			    	    	while(i!=857433)
+			    	    	{System.out.println(i);
+			    	    	i++;}
+			    	    	//out.println(command);// + "  command date " + (consDate = new Date()).getTime());
+			    	    	System.out.println("12");
+			    	    	System.out.println("command date " + (commandDate = new Date()).getTime());
+			    	    	//out.println("dc");
+			    	       out.println("2");
+			    	       out.println("f");
+			    	       
+			    	    	out.println("pwd");
+			    	       System.out.println("line129");
 				    	   out.println("pwd");
 				    	   
 				    	   out.println("exit");
+				    	   tf.setText("");
 				    	   
 				    	   
-			    	       int i=0;
+			    	       i=0;
 			    	       String line;
+			    	       
+			    	      
 			    	       
 				    	       while((line=in.readLine())!=null)
 				    	       {
 				    	    	   
-				    	    		   System.out.println(line);
+				    	    		   //System.out.println(line);
+				    	    	   //ta.append("test");
+				    	    	 publish( ta.append(line + "\n"));
+				    	    	   System.out.println(line);
+				    	    	   System.out.println(i++);
 				    	    		   
 				    	    		   
 				    	    		   
@@ -146,7 +178,8 @@ public class CommandLine extends JPanel implements KeyListener{
 				    	       String errSt;
 				    	       while((errSt=err.readLine())!=null)
 				    	       {
-				    	    	   System.out.println(errSt);
+				    	    	   //System.out.println(errSt);
+				    	    	//   ta.append(errSt+ "\n");
 				    	       }
 				    	    	   
 				    	    	   
@@ -157,6 +190,7 @@ public class CommandLine extends JPanel implements KeyListener{
 			    	    }
 			    	    catch (Exception e) 
 			    	    {
+			    	    	System.out.println("line179");
 			    	       e.printStackTrace();
 			    	    }
 		    	 }
@@ -165,6 +199,7 @@ public class CommandLine extends JPanel implements KeyListener{
 	    	 }
 	    	 catch (IOException e)
 	    	 {
+	    		 System.out.println("line188");
 	    		 e.printStackTrace();
 	    	 }
 	    	 
