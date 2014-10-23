@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class CommandLine extends JPanel implements KeyListener, ObserverOfIOCommandObject{
+public class CommandLine extends JPanel implements KeyListener, ObserverBashOutput, SubjectCommandLineInput{
 
 	/*
 	 * Problem with Process.
@@ -73,15 +73,8 @@ public class CommandLine extends JPanel implements KeyListener, ObserverOfIOComm
 	JTextField tf;
 	JTextField workDir;
 	JScrollPane panel;
-	
-	IOCommandObject ioco;
 
-	public CommandLine(IOCommandObject ioco) {
-		
-		this.ioco = ioco;
-		ioco.registerObserverOfIOCommandObject(this);
-		
-		
+	public CommandLine() {
 		// super(new GridLayout(1,0));
 		workDir = new JTextField(35);
 		tf = new JTextField(35);
@@ -202,12 +195,28 @@ public class CommandLine extends JPanel implements KeyListener, ObserverOfIOComm
 	}
 
 	@Override
-	public void updateFromIOCommandObject() {
+	public void registerObserverCommandLineInput(ObserverCommandLineInput obs) {
 		// TODO Auto-generated method stub
 		
 	}
 
+	@Override
+	public void removeObserverCommandLineInput(ObserverCommandLineInput obs) {
+		// TODO Auto-generated method stub
+		
+	}
 
+	@Override
+	public void notifyObserversCommandLineInput() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateCommandLineOutput() {
+		// TODO Auto-generated method stub
+		
+	}
 
 	
 

@@ -79,14 +79,21 @@ public class Build8 extends JPanel implements ObserverFile, ActionListener//, Ob
 
 	public  Build8()
 	{
-
+		super(new GridLayout(0,3));
+		//-------------------------  objects needing instantiated-----------------------------------
+		
+		IOCommandObject ioco = new IOCommandObject();
+		BashThread bashThread = new BashThread(ioco);
+		Thread thisThread = new Thread(bashThread);
+		thisThread.start();
+		
 		//-------------------------- layout --------------------------------------------------------
 
-		super(new GridLayout(0,3));
+		
 
 		ta = new JTextArea(50,50);
 		ta.setText("testing");
-		cl = new CommandLine();
+		cl = new CommandLine(ioco);
 
 		broBot = new Browser("Browser Bottom");
 		broTop = new Browser("Browser Top");
