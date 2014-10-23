@@ -1,0 +1,10 @@
+package overview;
+
+/*
+ * producer thread for CommandLineInputThread/BashThread/BashCLISharedObject
+ * gets called when 
+ */
+
+public class CommandLineInputThread {
+
+}
