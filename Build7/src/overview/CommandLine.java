@@ -128,57 +128,129 @@ public class CommandLine extends JPanel implements KeyListener{
 		    		
 			    	    try
 			    	    {
-			    	    	ta.append("insdie second try");
-			    	    	System.out.println("testing");
-			    	    	String command = tf.getText();
-			    	    	tf.setText("");
+			    	    //	ta.append("insdie second try");
+			    	    	//System.out.println("testing");
+			    	    	//String command = tf.getText();
+			    	    	//tf.setText("");
 //###### ta.setText will not
 //action until the WHOLE of this try (perhaps more) is finished.
 //therefore because something such as "dc" hangs the in.readLine() this then hangs the GUI, the textarea never populated, and
 //can't get user to add in details....			    	    	
 			    	    	//ta.setText(command + (myDate = new Date()).getTime());
-			    	    	System.out.println("line132 " + " Console date " + (consolDate = new Date()).getTime() + "  tarea date " + (myDate = new Date()).getTime());
-			    	    	int i = 0;
-			    	    	while(i!=857433)
+			    	    	//System.out.println("line132 " + " Console date " + (consolDate = new Date()).getTime() + "  tarea date " + (myDate = new Date()).getTime());
+			    	    	//int i = 0;
+			    	    	/*while(i!=857433)
 			    	    	{System.out.println(i);
-			    	    	i++;}
+			    	    	i++;}*/
 			    	    	//out.println(command);// + "  command date " + (consDate = new Date()).getTime());
-			    	    	System.out.println("12");
-			    	    	System.out.println("command date " + (commandDate = new Date()).getTime());
-			    	    	//out.println("dc");
-			    	       out.println("2");
+			    	    //	System.out.println("12");
+			    	    	//System.out.println("command date " + (commandDate = new Date()).getTime());
+			    	  //  	out.println("ls");
+			    	    //	out.println("pwd");
+			    	  //  	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			    	    //	String s = br.readLine();
+			    	   // 	System.out.println("read in stuff " + s);
+			    	    	
+			    	    //	System.out.println("line 154");
+			    	    //	out.println(s);
+			    	    /*	out.println("dc");
+			    	    	out.println("2");
+			    	      // out.println(s);
 			    	       out.println("f");
+			    	       out.println("3");
+			    	       out.println("f");
+			    	       System.out.println("line 158");
+			    	       out.println("q");
+			    	       System.out.println("line 159");
+			    	       out.println("ls");
+			    	       System.out.println("line 160");
+			    	    //   out.println("q");
+			    	      // out.println("ls");*/
 			    	       
-			    	    	out.println("pwd");
-			    	       System.out.println("line129");
-				    	   out.println("pwd");
+			    	    //	out.println("pwd");
+			    	      // System.out.println("line129");
+				    	   //out.println("pwd");
 				    	   
-				    	   out.println("exit");
-				    	   tf.setText("");
+				    	   //out.println("exit");
+				    	 //  tf.setText("");
 				    	   
 				    	   
-			    	       i=0;
+			    	       int i=0;
 			    	       String line;
+			    	       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			    	       String s;
 			    	       
-			    	      
+//SET up an infinite loop, so once started, just keeps going
+//will need to close, when other stuff going on, such as using the file browser
+//not sure how will set up without an infinite loop
+//but probably just waiting for input from user, rather than on an infinite loop, so
+//set up on enter, if it's on a waiting for input, then it'l just output an error
+//as usual, and so user will see that.
+// add in pwd once in.ready() == false as well			    	       
+			    	      while(i ==0)
+			    	      {
+			    	    	  System.out.println("start of first while");
+				    	    	s = br.readLine();
+				    	    	out.println(s);
+				    	    	System.out.println("println out s " + s);
 			    	       
-				    	       while((line=in.readLine())!=null)
-				    	       {
+//doesnt set up in.ready() straight away
+//perhaps need to wait for a few mms??
+				    	    	
+//with this code, I can now get ls to produce output (on second command - ie ls <enter> then say dc <enter> outputs ls
+//and can get dc to work and quit and then use ls again after
+//but have the same proble with the wait between
+
+//either this is that in.ready() has not had time to populate in which case stick a pause in
+//or in.ready() does not populate straight away
+				    	    	
+//this is because in.ready() has not yet populated.				    	    	
+				    	    	
+				    	    	try {
+				    	    	    Thread.sleep(10);                 //1000 milliseconds is one second.
+				    	    	} catch(InterruptedException ex) {
+				    	    	    Thread.currentThread().interrupt();
+				    	    	}
+				    	    	
+				    	    	if(in.ready()==true)
+				    	    	{
+				    	    		System.out.println("into ready == true");
+					    	       while((line=in.readLine())!=null)
+					    	    	//if((line=in.readLine())==null)
+					    	       {
+					    	    	   System.out.println("into second while");
+					    	    		   //System.out.println(line);
+					    	    	   //ta.append("test");
+					    	    	// publish( ta.append(line + "\n"));
+					    	    	   System.out.println(line);
+					    	    	 //  System.out.println(i++);
+//#####THIS LOOKS LIKE WHAT NEED
+//I think tHE BREAK HERE IS BREAKING BOTH WHILE LOOOPS
+//AND EVEN WITH BREAK THE GUI STILL HANGING				    	    	   
+				    	    	   if(in.ready()==false)
+				    	    	  {
+				    	    		  System.out.println("break");
+				    	    		  break;
+				    	    	  }
 				    	    	   
-				    	    		   //System.out.println(line);
-				    	    	   //ta.append("test");
-				    	    	 publish( ta.append(line + "\n"));
-				    	    	   System.out.println(line);
-				    	    	   System.out.println(i++);
-				    	    		   
-				    	    		   
-				    	    		   
-				    	       }
+					    	       }
+				    	    	}
+				    	    	else{
+				    	    	
+				    	    		System.out.println("got here");
+				    	    	}
+				    	       
+			    	      }
+			    	      System.out.println("out of while");
+				    	 /*      if(line==null)
+				    	       {
+				    	    	   System.out.println("output = null");
+				    	       }*/
 				    	       //?? check where to place this, as may be better within while loop
 				    	       String errSt;
 				    	       while((errSt=err.readLine())!=null)
 				    	       {
-				    	    	   //System.out.println(errSt);
+				    	    	   System.out.println(errSt);
 				    	    	//   ta.append(errSt+ "\n");
 				    	       }
 				    	    	   
