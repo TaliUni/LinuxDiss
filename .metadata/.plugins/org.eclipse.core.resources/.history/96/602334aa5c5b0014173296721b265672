@@ -95,10 +95,10 @@ public class BashThread implements Runnable {
 					}
 				}
 				System.out.println("out of break");
-			/*	while ((errSt = err.readLine()) != null) {
+				while ((errSt = err.readLine()) != null) {
 					System.out.println(errSt);
 
-				}*/
+				}
 
 			} catch (Exception e) {
 			}

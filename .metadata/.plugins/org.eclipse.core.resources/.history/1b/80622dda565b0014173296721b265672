@@ -24,8 +24,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class CommandLine extends JPanel implements KeyListener,
-		ObserverOfIOCommandObject {
+public class CommandLine extends JPanel implements KeyListener, ObserverOfIOCommandObject{
 
 	/*
 	 * Problem with Process.
@@ -74,15 +73,15 @@ public class CommandLine extends JPanel implements KeyListener,
 	JTextField tf;
 	JTextField workDir;
 	JScrollPane panel;
-	String cmd;
-
+	
 	IOCommandObject ioco;
 
 	public CommandLine(IOCommandObject ioco) {
-
+		
 		this.ioco = ioco;
 		ioco.registerObserverOfIOCommandObject(this);
-
+		
+		
 		// super(new GridLayout(1,0));
 		workDir = new JTextField(35);
 		tf = new JTextField(35);
@@ -95,11 +94,34 @@ public class CommandLine extends JPanel implements KeyListener,
 		panel = new JScrollPane(ta);
 
 		add(workDir);
-		
+		add(tf);
 		// add(ta);
 		add(panel);
-		add(tf);
 
+		File wd = new File("/bin");
+		// using processbuilder so can retrieve the workingdir which can't from
+		// just a process
+		ProcessBuilder proc = null;
+		Process myProcess = null;
+
+		proc = new ProcessBuilder("/bin/bash");
+		proc.directory(wd);
+		try {
+			myProcess = proc.start();
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+
+		if (myProcess != null) {
+
+			BufferedReader in = new BufferedReader(new InputStreamReader(
+					myProcess.getInputStream()));
+			PrintWriter out = new PrintWriter(new BufferedWriter(
+					new OutputStreamWriter(myProcess.getOutputStream())), true);
+			BufferedReader err = new BufferedReader(new InputStreamReader(
+					myProcess.getErrorStream()));
+		}
 	}
 
 	public void setText(String s) {
@@ -120,11 +142,48 @@ public class CommandLine extends JPanel implements KeyListener,
 
 		int key = ke.getKeyCode();
 		if (key == KeyEvent.VK_ENTER) {
+			
+			/*
+			 * Synchronise method to get and put - tf.getText variable
+			 * synchronise method to get and put - in.readLine() list variable
+			 * 
+			 * On pressing Enter
+			 * retrieve text entered in tf - string
+			 * send that to THREAD
+			 * THREAD - 
+			 * 		out.println(string)
+			 * 	
+					try {
+						Thread.sleep(10); // 1000 milliseconds is one second.
+					} catch (InterruptedException ex) {
+						Thread.currentThread().interrupt();
+					}
+		
+					while (in.ready() == true) {
+						SomeString = in.readLine() 
+					}
+		
+					String errSt;
+					while ((errSt = err.readLine()) != null) {
+						Same? SomeString = err.readLine
+						??err.ready()!=false??
+					}
+			 *
+			 *
+			 * Then pass out SomeString to programme
+			 * set ta = SomeString
+			 * set tf = blank
+			 * 
+			 * Query - does GUI have to wait on thread doing it's thing? - I think yes, to prevent user
+			 * typing in further stuff and confusing things
+			 * Can I do that, probably by getting THREAD to take up priority and tie in with GUI, so that
+			 * GUI can't go if that thread is doing stuff (but only the stuff needed, not the general running the process
+			 * which it will be doing all the time)
+			 * So ie when in.ready()!=false tie up GUI
+			 * when in.ready()==false GUI works
+			 */
 
-			cmd = tf.getText();
-			ioco.putCmd(cmd);
-			tf.setText("");
-			// set tf to uneditable
+		
 
 		}
 
@@ -144,10 +203,14 @@ public class CommandLine extends JPanel implements KeyListener,
 
 	@Override
 	public void updateFromIOCommandObject() {
-		String outp = ioco.getOutput();
-		System.out.println("GUI Command Line output " + outp);
-		ta.append(outp + "\n");
-
+		// TODO Auto-generated method stub
+		
 	}
+
+
+
+	
+
+	
 
 }

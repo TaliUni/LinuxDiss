@@ -24,8 +24,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class CommandLine extends JPanel implements KeyListener,
-		ObserverOfIOCommandObject {
+public class CommandLine extends JPanel implements KeyListener, ObserverOfIOCommandObject{
 
 	/*
 	 * Problem with Process.
@@ -75,14 +74,15 @@ public class CommandLine extends JPanel implements KeyListener,
 	JTextField workDir;
 	JScrollPane panel;
 	String cmd;
-
+	
 	IOCommandObject ioco;
 
 	public CommandLine(IOCommandObject ioco) {
-
+		
 		this.ioco = ioco;
 		ioco.registerObserverOfIOCommandObject(this);
-
+		
+		
 		// super(new GridLayout(1,0));
 		workDir = new JTextField(35);
 		tf = new JTextField(35);
@@ -95,11 +95,11 @@ public class CommandLine extends JPanel implements KeyListener,
 		panel = new JScrollPane(ta);
 
 		add(workDir);
-		
+		add(tf);
 		// add(ta);
 		add(panel);
-		add(tf);
 
+		
 	}
 
 	public void setText(String s) {
@@ -120,11 +120,13 @@ public class CommandLine extends JPanel implements KeyListener,
 
 		int key = ke.getKeyCode();
 		if (key == KeyEvent.VK_ENTER) {
-
+			
 			cmd = tf.getText();
 			ioco.putCmd(cmd);
 			tf.setText("");
-			// set tf to uneditable
+			//set tf to uneditable
+
+		
 
 		}
 
@@ -144,10 +146,15 @@ public class CommandLine extends JPanel implements KeyListener,
 
 	@Override
 	public void updateFromIOCommandObject() {
-		String outp = ioco.getOutput();
-		System.out.println("GUI Command Line output " + outp);
-		ta.append(outp + "\n");
-
+		//ioco.getOutput();
+		ta.setText(ioco.getOutput());
+		
 	}
+
+
+
+	
+
+	
 
 }

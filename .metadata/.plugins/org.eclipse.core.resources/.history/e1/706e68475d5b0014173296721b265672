@@ -95,10 +95,9 @@ public class CommandLine extends JPanel implements KeyListener,
 		panel = new JScrollPane(ta);
 
 		add(workDir);
-		
+		add(tf);
 		// add(ta);
 		add(panel);
-		add(tf);
 
 	}
 

@@ -62,7 +62,6 @@ public class BashThread implements Runnable {
 	public void run() {
 
 		while (!stop) {
-			System.out.println("start of run bashthread");
 			cmd = ioco.getCmd();
 			System.out.println("BashThread cmd " + cmd);
 			out.println(cmd);
@@ -94,11 +93,11 @@ public class BashThread implements Runnable {
 
 					}
 				}
-				System.out.println("out of break");
-			/*	while ((errSt = err.readLine()) != null) {
+
+				while ((errSt = err.readLine()) != null) {
 					System.out.println(errSt);
 
-				}*/
+				}
 
 			} catch (Exception e) {
 			}

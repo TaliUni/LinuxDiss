@@ -95,10 +95,9 @@ public class CommandLine extends JPanel implements KeyListener,
 		panel = new JScrollPane(ta);
 
 		add(workDir);
-		
+		add(tf);
 		// add(ta);
 		add(panel);
-		add(tf);
 
 	}
 
@@ -144,9 +143,8 @@ public class CommandLine extends JPanel implements KeyListener,
 
 	@Override
 	public void updateFromIOCommandObject() {
-		String outp = ioco.getOutput();
-		System.out.println("GUI Command Line output " + outp);
-		ta.append(outp + "\n");
+		// ioco.getOutput();
+		ta.setText(ioco.getOutput());
 
 	}
 

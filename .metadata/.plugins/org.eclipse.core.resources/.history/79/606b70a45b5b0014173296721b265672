@@ -38,7 +38,6 @@ public class IOCommandObject implements SubjectIOCommandObject{
 	
 	public synchronized String getCmd()
 	{
-		System.out.println("ioco getCmd() testing ");
 		while(cmdEmpty)
 		{
 			try{wait();}

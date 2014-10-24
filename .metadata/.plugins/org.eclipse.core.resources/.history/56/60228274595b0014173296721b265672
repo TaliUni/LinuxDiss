@@ -18,7 +18,6 @@ public class BashThread implements Runnable {
 	String cmd;
 	String output;
 	String errSt;
-	Boolean stop = false;
 
 	// #### Question - change working directory, once up and running, away from
 	// bin/bash
@@ -55,54 +54,54 @@ public class BashThread implements Runnable {
 					myProcess.getErrorStream()));
 
 		}
+		
+		
 
 	}
 
 	@Override
 	public void run() {
 
-		while (!stop) {
-			System.out.println("start of run bashthread");
-			cmd = ioco.getCmd();
-			System.out.println("BashThread cmd " + cmd);
-			out.println(cmd);
+		
+		cmd = ioco.getCmd();
+		System.out.println("IOCO cmd " + cmd);
+		out.println(cmd);
 
-			// wait until cmd has sent something to the buffer
-			// make busy wait - ???? not sure about this, as only want one wait
-			// at
-			// start??
+		// wait until cmd has sent something to the buffer
+		// make busy wait - ???? not sure about this, as only want one wait at
+		// start??
 
-			try {
-				Thread.sleep(10); // 1000 milliseconds is one second.
-			} catch (InterruptedException ex) {
-				Thread.currentThread().interrupt();
-			}
-
-			try {
-				if (in.ready() == true) {
-
-					while ((output = in.readLine()) != null)
-
-					{
-						System.out.println("BashThread output " + output);
-						ioco.putOutput(output);
-
-						if (in.ready() == false) {
-							System.out.println("break");
-							break;
-						}
-
-					}
-				}
-				System.out.println("out of break");
-			/*	while ((errSt = err.readLine()) != null) {
-					System.out.println(errSt);
-
-				}*/
-
-			} catch (Exception e) {
-			}
+		try {
+			Thread.sleep(10); // 1000 milliseconds is one second.
+		} catch (InterruptedException ex) {
+			Thread.currentThread().interrupt();
 		}
+
+		try {
+			if (in.ready() == true) {
+
+				while ((output = in.readLine()) != null)
+
+				{
+					System.out.println("BashThread output " + output);
+					ioco.putOutput(output);
+
+					if (in.ready() == false) {
+						System.out.println("break");
+						break;
+					}
+
+				}
+			} 
+
+			while ((errSt = err.readLine()) != null) {
+				System.out.println(errSt);
+				
+			}
+
+		} catch (Exception e) {
+		}
+
 	}
 
 }

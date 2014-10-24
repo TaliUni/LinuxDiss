@@ -1,20 +1,11 @@
 package overview;
 
-import java.util.List;
-import java.util.LinkedList;
-
-
-
-
 public class IOCommandObject implements SubjectIOCommandObject{
 	
 	String cmd;
 	String output;
-	Boolean cmdEmpty = true;
+	Boolean cmdEmpty = false;
 	Boolean outputEmpty = true;
-	
-	private List<ObserverOfIOCommandObject> registeredIOObservers = new LinkedList<ObserverOfIOCommandObject>();
-	
 	
 	public IOCommandObject()
 	{
@@ -27,8 +18,7 @@ public class IOCommandObject implements SubjectIOCommandObject{
 		//has to wait until "cmd" has been emptied by BashThread
 		while (!cmdEmpty)
 		{
-			try{wait();}
-			catch(InterruptedException e){}
+			//wait()
 		}
 		
 		cmdEmpty = false;
@@ -38,11 +28,9 @@ public class IOCommandObject implements SubjectIOCommandObject{
 	
 	public synchronized String getCmd()
 	{
-		System.out.println("ioco getCmd() testing ");
 		while(cmdEmpty)
 		{
-			try{wait();}
-			catch(InterruptedException e){}
+			//wait()
 		}
 		cmdEmpty = true;
 		notifyAll();
@@ -52,22 +40,12 @@ public class IOCommandObject implements SubjectIOCommandObject{
 	
 	public synchronized void putOutput(String output)
 	{
-		while(!outputEmpty)
-			try{wait();}
-		catch(InterruptedException e){}
-		
-		outputEmpty = false;
 		this.output = output;
-		System.out.println("IOCO output " + output);
 		notifyObserversOfIOCommandObject();
 	}
 	
 	public synchronized String getOutput()
 	{
-		while(outputEmpty)
-			try{wait();}
-		catch(InterruptedException e){}
-		outputEmpty=true;
 		return output;
 	}
 	
@@ -76,24 +54,19 @@ public class IOCommandObject implements SubjectIOCommandObject{
 
 	@Override
 	public void registerObserverOfIOCommandObject(ObserverOfIOCommandObject obs) {
-		
-		registeredIOObservers.add(obs);
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void removeObserverOfIOCommandObject(ObserverOfIOCommandObject obs) {
+		// TODO Auto-generated method stub
 		
-		registeredIOObservers.remove(obs);
 	}
 
 	@Override
 	public void notifyObserversOfIOCommandObject() {
-		
-		for(ObserverOfIOCommandObject obs : registeredIOObservers)
-		{
-			obs.updateFromIOCommandObject();
-		}
+		// TODO Auto-generated method stub
 		
 	}
 
