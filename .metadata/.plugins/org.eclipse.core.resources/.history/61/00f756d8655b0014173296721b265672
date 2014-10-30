@@ -1,0 +1,129 @@
+package overview;
+
+import java.util.List;
+import java.util.LinkedList;
+
+
+
+
+public class IOCommandObject implements SubjectIOCommandObject, SubjectCLWorkDir{
+	
+	String cmd;
+	String output;
+	Boolean cmdEmpty = true;
+	Boolean outputEmpty = true;
+	String workDir;
+	
+	private List<ObserverOfIOCommandObject> registeredIOObservers = new LinkedList<ObserverOfIOCommandObject>();
+	private List<ObserverCLWorkDir> registeredCLWorkDirObservers = new LinkedList<ObserverCLWorkDir>();
+	
+	public IOCommandObject()
+	{
+		
+		
+	}
+	
+	public synchronized void putCmd(String cmd)
+	{
+		//has to wait until "cmd" has been emptied by BashThread
+		while (!cmdEmpty)
+		{
+			try{wait();}
+			catch(InterruptedException e){}
+		}
+		
+		cmdEmpty = false;
+		notifyAll();
+		this.cmd = cmd;
+	}
+	
+	public synchronized String getCmd()
+	{
+		System.out.println("ioco getCmd() testing ");
+		while(cmdEmpty)
+		{
+			try{wait();}
+			catch(InterruptedException e){}
+		}
+		cmdEmpty = true;
+		notifyAll();
+		
+		return cmd;
+	}
+	
+	public synchronized void putOutput(String output)
+	{
+		while(!outputEmpty)
+			try{wait();}
+		catch(InterruptedException e){}
+		
+		outputEmpty = false;
+		this.output = output;
+		System.out.println("IOCO output " + output);
+		notifyObserversOfIOCommandObject();
+	}
+	
+	public synchronized void setWorkDir(String workDir)
+	{
+		this.workDir = workDir;
+		notifyObserversCLWorkDir();
+	}
+	
+	public synchronized String getOutput()
+	{
+		while(outputEmpty)
+			try{wait();}
+		catch(InterruptedException e){}
+		outputEmpty=true;
+		return output;
+	}
+	
+	//don't think need delete methods, as the empty boolean value, along with synchronized
+	//ensures that not overwritten before used; and that written before taken again
+
+	@Override
+	public void registerObserverOfIOCommandObject(ObserverOfIOCommandObject obs) {
+		
+		registeredIOObservers.add(obs);
+		
+	}
+
+	@Override
+	public void removeObserverOfIOCommandObject(ObserverOfIOCommandObject obs) {
+		
+		registeredIOObservers.remove(obs);
+	}
+
+	@Override
+	public void notifyObserversOfIOCommandObject() {
+		
+		for(ObserverOfIOCommandObject obs : registeredIOObservers)
+		{
+			obs.updateFromIOCommandObject();
+		}
+		
+	}
+
+	@Override
+	public void registerObserverCLWorkDir(ObserverCLWorkDir obs) {
+		registeredCLWorkDirObservers.add(obs);
+		
+	}
+
+	@Override
+	public void removeObserverCLWorkDir(ObserverCLWorkDir obs) {
+		registeredCLWorkDirObservers.remove(obs);
+		
+	}
+
+	@Override
+	public void notifyObserversCLWorkDir() {
+		for(ObserverCLWorkDir obs : registeredCLWorkDirObservers)
+		{
+			obs.updateCommandLineFile();
+		}
+		
+		
+	}
+
+}

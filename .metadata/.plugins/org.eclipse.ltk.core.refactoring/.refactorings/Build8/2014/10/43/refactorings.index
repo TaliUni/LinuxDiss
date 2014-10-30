@@ -15,3 +15,7 @@
 1414071069803	Copy compilation unit
 1414071276045	Delete element
 1414137890525	Rename field 'empty'
+1414144736338	Copy compilation unit
+1414144809676	Copy compilation unit
+1414144926144	Rename type 'ObserverWorkDir'
+1414145353938	Rename method 'updateBrowserFile'

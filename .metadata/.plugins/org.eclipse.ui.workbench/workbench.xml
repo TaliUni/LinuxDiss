@@ -35,53 +35,33 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommandLine.java" partName="CommandLine.java" path="/home/tali/Dissertation/CurEclipse/Build8/src/overview/CommandLine.java" title="CommandLine.java" tooltip="Build8/src/overview/CommandLine.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build8/src/overview/CommandLine.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2920" selectionTopPixel="671"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Build9.java" partName="Build9.java" path="/home/tali/Dissertation/CurEclipse/Build9/src/overview/Build9.java" title="Build9.java" tooltip="Build9/src/overview/Build9.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build9/src/overview/Build9.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5311" selectionTopPixel="1824"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BashThread.java" partName="BashThread.java" path="/home/tali/Dissertation/CurEclipse/Build8/src/overview/BashThread.java" title="BashThread.java" tooltip="Build8/src/overview/BashThread.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build8/src/overview/BashThread.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1267" selectionTopPixel="186"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Build8.java" partName="Build8.java" path="/home/tali/Dissertation/CurEclipse/Build8/src/overview/Build8.java" title="Build8.java" tooltip="Build8/src/overview/Build8.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build8/src/overview/Build8.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3378" selectionTopPixel="175"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObserverFile.java" partName="ObserverFile.java" path="/home/tali/Dissertation/CurEclipse/Build8/src/overview/ObserverFile.java" title="ObserverFile.java" tooltip="Build8/src/overview/ObserverFile.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build8/src/overview/ObserverFile.java"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommandLine.java" partName="CommandLine.java" path="/home/tali/Dissertation/CurEclipse/Build9/src/overview/CommandLine.java" title="CommandLine.java" tooltip="Build9/src/overview/CommandLine.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build9/src/overview/CommandLine.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObserverCommandLineInput.java" partName="ObserverCommandLineInput.java" path="/home/tali/Dissertation/CurEclipse/Build8/src/overview/ObserverCommandLineInput.java" title="ObserverCommandLineInput.java" tooltip="Build8/src/overview/ObserverCommandLineInput.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build8/src/overview/ObserverCommandLineInput.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="104" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Browser.java" partName="Browser.java" path="/home/tali/Dissertation/CurEclipse/Build9/src/overview/Browser.java" title="Browser.java" tooltip="Build9/src/overview/Browser.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build9/src/overview/Browser.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11316" selectionTopPixel="5390"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObserverBashOutput.java" partName="ObserverBashOutput.java" path="/home/tali/Dissertation/CurEclipse/Build8/src/overview/ObserverBashOutput.java" title="ObserverBashOutput.java" tooltip="Build8/src/overview/ObserverBashOutput.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build8/src/overview/ObserverBashOutput.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="101" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObserverFile.java" partName="ObserverFile.java" path="/home/tali/Dissertation/CurEclipse/Build9/src/overview/ObserverFile.java" title="ObserverFile.java" tooltip="Build9/src/overview/ObserverFile.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build9/src/overview/ObserverFile.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SubjectBashOutput.java" partName="SubjectBashOutput.java" path="/home/tali/Dissertation/CurEclipse/Build8/src/overview/SubjectBashOutput.java" title="SubjectBashOutput.java" tooltip="Build8/src/overview/SubjectBashOutput.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build8/src/overview/SubjectBashOutput.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="230" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" partName="Menu.java" path="/home/tali/Dissertation/CurEclipse/Build9/src/overview/Menu.java" title="Menu.java" tooltip="Build9/src/overview/Menu.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build9/src/overview/Menu.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="671" selectionTopPixel="241"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SubjectCommandLineInput.java" partName="SubjectCommandLineInput.java" path="/home/tali/Dissertation/CurEclipse/Build8/src/overview/SubjectCommandLineInput.java" title="SubjectCommandLineInput.java" tooltip="Build8/src/overview/SubjectCommandLineInput.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build8/src/overview/SubjectCommandLineInput.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="266" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IOCommandObject.java" partName="IOCommandObject.java" path="/home/tali/Dissertation/CurEclipse/Build8/src/overview/IOCommandObject.java" title="IOCommandObject.java" tooltip="Build8/src/overview/IOCommandObject.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build8/src/overview/IOCommandObject.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="15" selectionOffset="32" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CL_23Oct_10_56WorkingVersion.java" partName="CL_23Oct_10_56WorkingVersion.java" path="/home/tali/Dissertation/CurEclipse/Build8/src/overview/CL_23Oct_10_56WorkingVersion.java" title="CL_23Oct_10_56WorkingVersion.java" tooltip="Build8/src/overview/CL_23Oct_10_56WorkingVersion.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build8/src/overview/CL_23Oct_10_56WorkingVersion.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="518" selectionOffset="3670" selectionTopPixel="1342"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BashThread.java" partName="BashThread.java" path="/home/tali/Dissertation/CurEclipse/Build9/src/overview/BashThread.java" title="BashThread.java" tooltip="Build9/src/overview/BashThread.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Build9/src/overview/BashThread.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1598" selectionTopPixel="724"/>
 </editor>
 </editors>
 <views>
@@ -112,9 +92,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (57 items)"/>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (100 of 105 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="197" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -183,7 +161,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -299,17 +277,12 @@
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.jdt.ui.JavadocView"/>
+<view id="org.eclipse.jdt.ui.SourceView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
-<fastViews>
-<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
-<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
-<view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
@@ -338,15 +311,20 @@
 </folder>
 </info>
 <info folder="true" part="bottom" ratio="0.74892396" ratioLeft="522" ratioRight="175" relationship="4" relative="org.eclipse.ui.internal.ViewStack@ee0bf6">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
+<page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.7494481" ratioLeft="679" ratioRight="227" relationship="2" relative="org.eclipse.ui.internal.ViewStack@ee0bf6">
@@ -471,167 +449,165 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/CommandLine.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/IOCommandObject.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/BashThread.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/Build8.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/ObserverBashOutput.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/SubjectBashOutput.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/SubjectCommandLineInput.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/CommandObject.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/CommandIOObject.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/IOCommandObject.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/ObserverOfIOCommandObject.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/SubjectIOCommandObject.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build8/src/overview/CL_23Oct_10_56WorkingVersion.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build9/src/overview/Build9.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build9/src/overview/CommandLine.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build9/src/overview/Browser.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build9/src/overview/ObserverFile.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build9/src/overview/Menu.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Build9/src/overview/BashThread.java"/>
 </editors>
-<item historyLabel="SubjectBashOutput.java" index="4">
+<item historyLabel="CommandLine.java" index="0">
+<position info="not_deleted" x="4225" y="0"/>
+</item>
+<item historyLabel="IOCommandObject.java" index="1">
+<position info="not_deleted" x="1411" y="0"/>
+</item>
+<item historyLabel="BashThread.java" index="2">
+<position info="not_deleted" x="2716" y="0"/>
+</item>
+<item historyLabel="CommandLine.java" index="0">
+<position info="not_deleted" x="4225" y="0"/>
+</item>
+<item historyLabel="IOCommandObject.java" index="1">
+<position info="not_deleted" x="1411" y="0"/>
+</item>
+<item historyLabel="Build8.java" index="3">
+<position info="not_deleted" x="5573" y="0"/>
+</item>
+<item historyLabel="BashThread.java" index="2">
+<position info="not_deleted" x="2716" y="0"/>
+</item>
+<item historyLabel="BashThread.java" index="2">
+<position info="not_deleted" x="2634" y="0"/>
+</item>
+<item historyLabel="BashThread.java" index="2">
+<position info="not_deleted" x="2529" y="0"/>
+</item>
+<item historyLabel="BashThread.java" index="2">
+<position info="not_deleted" x="2674" y="0"/>
+</item>
+<item historyLabel="BashThread.java" index="2">
+<position info="not_deleted" x="2676" y="0"/>
+</item>
+<item historyLabel="BashThread.java" index="2">
+<position info="not_deleted" x="2576" y="0"/>
+</item>
+<item historyLabel="BashThread.java" index="2">
+<position info="not_deleted" x="2457" y="0"/>
+</item>
+<item historyLabel="IOCommandObject.java" index="1">
+<position info="not_deleted" x="806" y="0"/>
+</item>
+<item historyLabel="BashThread.java" index="2">
+<position info="not_deleted" x="2798" y="0"/>
+</item>
+<item historyLabel="Build9.java" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SubjectCommandLineInput.java" index="5">
-<position info="not_deleted" x="266" y="0"/>
-</item>
-<item historyLabel="SubjectBashOutput.java" index="4">
-<position info="not_deleted" x="230" y="0"/>
-</item>
-<item historyLabel="CommandLine.java" index="0">
-<position info="not_deleted" x="4435" y="0"/>
-</item>
-<item historyLabel="CommandLine.java" index="0">
-<position info="not_deleted" x="717" y="0"/>
-</item>
-<item historyLabel="CommandLine.java" index="0">
-<position info="not_deleted" x="641" y="11"/>
-</item>
-<item historyLabel="Build8.java" index="2">
-<position info="not_deleted" x="3834" y="0"/>
-</item>
-<item historyLabel="BashThread.java" index="1">
+<item historyLabel="CommandLine.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BashThread.java" index="1">
-<position info="not_deleted" x="244" y="0"/>
-</item>
-<item historyLabel="BashThread.java" index="1">
-<position info="not_deleted" x="213" y="10"/>
-</item>
-<item historyLabel="BashThread.java" index="1">
-<position info="not_deleted" x="234" y="0"/>
-</item>
-<item historyLabel="BashThread.java" index="1">
-<position info="not_deleted" x="1177" y="91"/>
-</item>
-<item historyLabel="ObserverBashOutput.java" index="3">
-<position info="not_deleted" x="101" y="0"/>
-</item>
-<item historyLabel="SubjectBashOutput.java" index="4">
-<position info="not_deleted" x="230" y="0"/>
-</item>
-<item historyLabel="CommandObject.java" index="6">
+<item historyLabel="Browser.java" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="CommandObject.java" index="6">
+<item historyLabel="Browser.java" index="6">
 <position/>
 </item>
-<item historyLabel="CommandIOObject.java" index="7">
-<position info="not_deleted" x="32" y="13"/>
+<item historyLabel="Browser.java" index="6">
+<position info="not_deleted" x="7367" y="0"/>
 </item>
-<item historyLabel="CommandIOObject.java" index="7">
-<position/>
+<item historyLabel="ObserverFile.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="IOCommandObject.java" index="8">
-<position info="not_deleted" x="32" y="15"/>
+<item historyLabel="Browser.java" index="6">
+<position info="not_deleted" x="1667" y="0"/>
 </item>
-<item historyLabel="ObserverOfIOCommandObject.java" index="9">
-<position info="not_deleted" x="108" y="0"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SubjectIOCommandObject.java" index="10">
-<position info="not_deleted" x="217" y="0"/>
+<item historyLabel="Browser.java" index="6">
+<position info="not_deleted" x="1667" y="0"/>
 </item>
-<item historyLabel="ObserverOfIOCommandObject.java" index="9">
-<position info="not_deleted" x="38" y="25"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SubjectIOCommandObject.java" index="10">
-<position info="not_deleted" x="270" y="0"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5173" y="0"/>
 </item>
-<item historyLabel="CommandLine.java" index="0">
-<position info="not_deleted" x="641" y="11"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5478" y="0"/>
 </item>
-<item historyLabel="IOCommandObject.java" index="8">
-<position info="not_deleted" x="32" y="15"/>
+<item historyLabel="Browser.java" index="6">
+<position info="not_deleted" x="1667" y="0"/>
 </item>
-<item historyLabel="IOCommandObject.java" index="8">
-<position info="not_deleted" x="66" y="0"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5478" y="0"/>
 </item>
-<item historyLabel="IOCommandObject.java" index="8">
-<position info="not_deleted" x="32" y="15"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5216" y="0"/>
 </item>
-<item historyLabel="CommandLine.java" index="0">
-<position info="not_deleted" x="2920" y="0"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5397" y="0"/>
 </item>
-<item historyLabel="BashThread.java" index="1">
-<position info="not_deleted" x="244" y="0"/>
+<item historyLabel="Browser.java" index="6">
+<position info="not_deleted" x="1667" y="0"/>
 </item>
-<item historyLabel="Build8.java" index="2">
-<position info="not_deleted" x="3834" y="0"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5397" y="0"/>
 </item>
-<item historyLabel="Build8.java" index="2">
-<position info="not_deleted" x="3257" y="0"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5393" y="0"/>
 </item>
-<item historyLabel="Build8.java" index="2">
-<position info="not_deleted" x="3378" y="0"/>
+<item historyLabel="Browser.java" index="6">
+<position info="not_deleted" x="14899" y="0"/>
 </item>
-<item historyLabel="BashThread.java" index="1">
-<position info="not_deleted" x="244" y="0"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5393" y="0"/>
 </item>
-<item historyLabel="BashThread.java" index="1">
-<position/>
+<item historyLabel="Browser.java" index="6">
+<position info="not_deleted" x="3509" y="0"/>
 </item>
-<item historyLabel="Build8.java" index="2">
-<position info="not_deleted" x="3378" y="0"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5393" y="0"/>
 </item>
-<item historyLabel="Build8.java" index="2">
-<position info="not_deleted" x="3353" y="0"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5319" y="0"/>
 </item>
-<item historyLabel="Build8.java" index="2">
-<position info="not_deleted" x="3378" y="0"/>
+<item historyLabel="Browser.java" index="6">
+<position info="not_deleted" x="554" y="3"/>
 </item>
-<item historyLabel="BashThread.java" index="1">
-<position/>
+<item historyLabel="Menu.java" index="8">
+<position info="not_deleted" x="671" y="0"/>
 </item>
-<item historyLabel="CL_23Oct_10_56WorkingVersion.java" index="11">
-<position info="not_deleted" x="3379" y="191"/>
+<item historyLabel="Browser.java" index="6">
+<position info="not_deleted" x="554" y="3"/>
 </item>
-<item historyLabel="BashThread.java" index="1">
-<position/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5319" y="0"/>
 </item>
-<item historyLabel="CL_23Oct_10_56WorkingVersion.java" index="11">
-<position info="not_deleted" x="3670" y="518"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5311" y="0"/>
 </item>
-<item historyLabel="BashThread.java" index="1">
-<position info="not_deleted" x="1177" y="0"/>
+<item historyLabel="Browser.java" index="6">
+<position info="not_deleted" x="554" y="3"/>
 </item>
-<item historyLabel="CL_23Oct_10_56WorkingVersion.java" index="11">
-<position info="not_deleted" x="3670" y="518"/>
+<item historyLabel="Browser.java" index="6">
+<position info="not_deleted" x="9831" y="0"/>
 </item>
-<item historyLabel="BashThread.java" index="1">
-<position info="not_deleted" x="1177" y="0"/>
+<item historyLabel="Build9.java" index="4">
+<position info="not_deleted" x="5311" y="0"/>
 </item>
-<item historyLabel="BashThread.java" index="1">
-<position/>
+<item historyLabel="Browser.java" index="6">
+<position info="not_deleted" x="11316" y="0"/>
 </item>
-<item historyLabel="BashThread.java" index="1">
-<position/>
+<item historyLabel="BashThread.java" index="9">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="BashThread.java" index="1">
-<position info="not_deleted" x="441" y="0"/>
-</item>
-<item historyLabel="BashThread.java" index="1">
-<position/>
-</item>
-<item historyLabel="BashThread.java" index="1">
-<position info="not_deleted" x="1233" y="0"/>
-</item>
-<item active="true" historyLabel="BashThread.java" index="1">
-<position info="not_deleted" x="1257" y="0"/>
+<item active="true" historyLabel="BashThread.java" index="9">
+<position info="not_deleted" x="1598" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -642,9 +618,6 @@
 <trimArea IMemento.internal.id="16384">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@ee0bf6"/>
 </trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -652,55 +625,54 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CL_23Oct_10_56WorkingVersion.java" tooltip="Build8/src/overview/CL_23Oct_10_56WorkingVersion.java">
-<persistable path="/Build8/src/overview/CL_23Oct_10_56WorkingVersion.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BashThread.java" tooltip="Build9/src/overview/BashThread.java">
+<persistable path="/Build9/src/overview/BashThread.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SubjectIOCommandObject.java" tooltip="Build8/src/overview/SubjectIOCommandObject.java">
-<persistable path="/Build8/src/overview/SubjectIOCommandObject.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="Build9/src/overview/Menu.java">
+<persistable path="/Build9/src/overview/Menu.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObserverFile.java" tooltip="Build9/src/overview/ObserverFile.java">
+<persistable path="/Build9/src/overview/ObserverFile.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Browser.java" tooltip="Build9/src/overview/Browser.java">
+<persistable path="/Build9/src/overview/Browser.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommandLine.java" tooltip="Build9/src/overview/CommandLine.java">
+<persistable path="/Build9/src/overview/CommandLine.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Build9.java" tooltip="Build9/src/overview/Build9.java">
+<persistable path="/Build9/src/overview/Build9.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObserverOfIOCommandObject.java" tooltip="Build8/src/overview/ObserverOfIOCommandObject.java">
 <persistable path="/Build8/src/overview/ObserverOfIOCommandObject.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommandObject.java" tooltip="Build8/src/overview/CommandObject.java">
-<persistable path="/Build8/src/overview/CommandObject.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SubjectIOCommandObject.java" tooltip="Build8/src/overview/SubjectIOCommandObject.java">
+<persistable path="/Build8/src/overview/SubjectIOCommandObject.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SubjectCommandLineInput.java" tooltip="Build8/src/overview/SubjectCommandLineInput.java">
-<persistable path="/Build8/src/overview/SubjectCommandLineInput.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Browser.java" tooltip="Build7/src/overview/Browser.java">
+<persistable path="/Build7/src/overview/Browser.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SubjectBashOutput.java" tooltip="Build8/src/overview/SubjectBashOutput.java">
-<persistable path="/Build8/src/overview/SubjectBashOutput.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObserverBashOutput.java" tooltip="Build8/src/overview/ObserverBashOutput.java">
-<persistable path="/Build8/src/overview/ObserverBashOutput.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObserverCommandLineInput.java" tooltip="Build8/src/overview/ObserverCommandLineInput.java">
-<persistable path="/Build8/src/overview/ObserverCommandLineInput.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObserverFile.java" tooltip="Build7/src/overview/ObserverFile.java">
+<persistable path="/Build7/src/overview/ObserverFile.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObserverFile.java" tooltip="Build8/src/overview/ObserverFile.java">
 <persistable path="/Build8/src/overview/ObserverFile.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Build8.java" tooltip="Build8/src/overview/Build8.java">
-<persistable path="/Build8/src/overview/Build8.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Browser.java" tooltip="Build8/src/overview/Browser.java">
+<persistable path="/Build8/src/overview/Browser.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BashCLISharedObject.java" tooltip="Build8/src/overview/BashCLISharedObject.java">
-<persistable path="/Build8/src/overview/BashCLISharedObject.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObserverCLWorkDir.java" tooltip="Build8/src/overview/ObserverCLWorkDir.java">
+<persistable path="/Build8/src/overview/ObserverCLWorkDir.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BashThread.java" tooltip="Build8/src/overview/BashThread.java">
-<persistable path="/Build8/src/overview/BashThread.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SubjectCLWorkDir.java" tooltip="Build8/src/overview/SubjectCLWorkDir.java">
+<persistable path="/Build8/src/overview/SubjectCLWorkDir.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserInputThread.java" tooltip="Build8/src/overview/UserInputThread.java">
-<persistable path="/Build8/src/overview/UserInputThread.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommandLine.java" tooltip="Build8/src/overview/CommandLine.java">
-<persistable path="/Build8/src/overview/CommandLine.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Build7.java" tooltip="Build8/src/overview/Build7.java">
-<persistable path="/Build8/src/overview/Build7.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CL_23Oct_10_56WorkingVersion.java" tooltip="Build8/src/overview/CL_23Oct_10_56WorkingVersion.java">
+<persistable path="/Build8/src/overview/CL_23Oct_10_56WorkingVersion.java"/>
 </file>
 </mruList>
 </workbench>

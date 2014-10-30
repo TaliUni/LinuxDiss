@@ -1,8 +1,0 @@
-package overview;
-
-public interface ObserverOfIOCommandObject {
-	
-	public void updateBrowserFile(Browser brows);
-	public void updateCommandLineFile();
-
-}

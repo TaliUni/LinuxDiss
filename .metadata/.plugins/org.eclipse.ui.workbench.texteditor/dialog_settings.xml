@@ -13,8 +13,10 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="ta" key="selection"/>
+		<item value="highlightSelectedNode" key="selection"/>
 		<list key="findhistory">
+			<item value="highlightSelectedNode"/>
+			<item value="del"/>
 			<item value="ta"/>
 			<item value="system.out"/>
 			<item value="done"/>

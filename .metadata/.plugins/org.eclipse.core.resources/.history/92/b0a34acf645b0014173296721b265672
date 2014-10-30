@@ -1,0 +1,9 @@
+package overview;
+
+public interface SubjectCLWorkDir {
+	
+	public void registerObserverCLWorkDir(ObserverWorkDir obs);
+	public void removeObserverCLWorkDir(ObserverWorkDir obs);
+	public void notifyObserversCLWorkDir();
+
+}
